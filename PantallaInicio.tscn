@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://PantallaInicio.gd" type="Script" id=1]
+
+[node name="PantallaInicio" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -216.002
+margin_top = -73.6707
+margin_right = -111.002
+margin_bottom = -59.6707
+rect_scale = Vector2( 5, 5 )
+text = "Este es un juego"
+
+[node name="JuegoNuevo" type="Button" parent="."]
+margin_left = 236.523
+margin_top = 328.592
+margin_right = 325.523
+margin_bottom = 348.592
+rect_scale = Vector2( 3, 3 )
+text = "Juego nuevo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CargarPartida" type="Button" parent="."]
+margin_left = 563.527
+margin_top = 328.592
+margin_right = 662.527
+margin_bottom = 348.592
+rect_scale = Vector2( 3, 3 )
+text = "Cargar partida"
+
+[connection signal="pressed" from="JuegoNuevo" to="." method="_on_JuegoNuevo_pressed"]
+[connection signal="pressed" from="CargarPartida" to="." method="_on_CargarPartida_pressed"]

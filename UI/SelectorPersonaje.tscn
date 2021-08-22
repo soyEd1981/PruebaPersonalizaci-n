@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/SelectorPersonaje.gd" type="Script" id=1]
+
+[node name="SelectorPersonaje" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.05951
+margin_right = -1.05951
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -195.427
+margin_top = 34.9623
+margin_right = -25.4271
+margin_bottom = 464.962
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
